@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aasman Menu</title>
+  <link rel="stylesheet" type="text/css" href="Restaurent.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="Image/QuickBites1.png" alt="Quickbites Logo">
+    </div>
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#aboutus">About Us</a></li>
+      <li class="item"><a href="#signup">Signup</a></li>
+      <li class="item"><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="restaurant-header">
+    <h2>Aasman</h2>
+    <p class="restaurant-address">Frazer Road, Patna, Bihar</p>
+    <p class="restaurant-contact">Contact: +91 9123456780</p>
+    <p class="restaurant-description">Aasman offers an elegant rooftop dining experience in the heart of Patna. Enjoy a blend of Indian and continental flavors with a stunning view of the city skyline.</p>
+  </div>
+
+  <div class="restaurant">
+    <ul>
+      <li><strong>Starters</strong></li>
+      <li>Paneer Tikka - ₹210
+        <button class="add-to-cart" onclick="addToCart('Paneer Tikka', 210)">Add to Cart</button>
+      </li>
+      <li>Chicken Tikka - ₹260
+        <button class="add-to-cart" onclick="addToCart('Chicken Tikka', 260)">Add to Cart</button>
+      </li>
+      <li>Tandoori Mushroom - ₹220
+        <button class="add-to-cart" onclick="addToCart('Tandoori Mushroom', 220)">Add to Cart</button>
+      </li>
+      <li>Mutton Seekh Kebab - ₹280
+        <button class="add-to-cart" onclick="addToCart('Mutton Seekh Kebab', 280)">Add to Cart</button>
+      </li>
+      <li>Veg Galouti Kebab - ₹200
+        <button class="add-to-cart" onclick="addToCart('Veg Galouti Kebab', 200)">Add to Cart</button>
+      </li>
+
+      <li><strong>Main Course</strong></li>
+      <li>Butter Chicken (Half) - ₹320
+        <button class="add-to-cart" onclick="addToCart('Butter Chicken (Half)', 320)">Add to Cart</button>
+      </li>
+      <li>Butter Chicken (Full) - ₹550
+        <button class="add-to-cart" onclick="addToCart('Butter Chicken (Full)', 550)">Add to Cart</button>
+      </li>
+      <li>Dal Makhani - ₹180
+        <button class="add-to-cart" onclick="addToCart('Dal Makhani', 180)">Add to Cart</button>
+      </li>
+      <li>Chicken Curry - ₹270
+        <button class="add-to-cart" onclick="addToCart('Chicken Curry', 270)">Add to Cart</button>
+      </li>
+      <li>Paneer Butter Masala - ₹240
+        <button class="add-to-cart" onclick="addToCart('Paneer Butter Masala', 240)">Add to Cart</button>
+      </li>
+      <li>Rogan Josh - ₹290
+        <button class="add-to-cart" onclick="addToCart('Rogan Josh', 290)">Add to Cart</button>
+      </li>
+      <li>Murgh Lababdar - ₹310
+        <button class="add-to-cart" onclick="addToCart('Murgh Lababdar', 310)">Add to Cart</button>
+      </li>
+      <li>Veg Biryani - ₹220
+        <button class="add-to-cart" onclick="addToCart('Veg Biryani', 220)">Add to Cart</button>
+      </li>
+      <li>Chicken Biryani - ₹290
+        <button class="add-to-cart" onclick="addToCart('Chicken Biryani', 290)">Add to Cart</button>
+      </li>
+      <li>Shahi Paneer - ₹250
+        <button class="add-to-cart" onclick="addToCart('Shahi Paneer', 250)">Add to Cart</button>
+      </li>
+      <li>Hyderabadi Dum Biryani - ₹320
+        <button class="add-to-cart" onclick="addToCart('Hyderabadi Dum Biryani', 320)">Add to Cart</button>
+      </li>
+
+      <li><strong>Breads</strong></li>
+      <li>Butter Naan - ₹45
+        <button class="add-to-cart" onclick="addToCart('Butter Naan', 45)">Add to Cart</button>
+      </li>
+      <li>Garlic Naan - ₹55
+        <button class="add-to-cart" onclick="addToCart('Garlic Naan', 55)">Add to Cart</button>
+      </li>
+      <li>Tandoori Roti - ₹20
+        <button class="add-to-cart" onclick="addToCart('Tandoori Roti', 20)">Add to Cart</button>
+      </li>
+      <li>Laccha Paratha - ₹40
+        <button class="add-to-cart" onclick="addToCart('Laccha Paratha', 40)">Add to Cart</button>
+      </li>
+
+      <li><strong>Extras</strong></li>
+      <li>Green Salad - ₹30
+        <button class="add-to-cart" onclick="addToCart('Green Salad', 30)">Add to Cart</button>
+      </li>
+      <li>Boondi Raita - ₹45
+        <button class="add-to-cart" onclick="addToCart('Boondi Raita', 45)">Add to Cart</button>
+      </li>
+      <li>Roasted Papad - ₹15
+        <button class="add-to-cart" onclick="addToCart('Roasted Papad', 15)">Add to Cart</button>
+      </li>
+      <li>Mixed Pickle - ₹10
+        <button class="add-to-cart" onclick="addToCart('Mixed Pickle', 10)">Add to Cart</button>
+      </li>
+
+      <li><strong>Desserts</strong></li>
+      <li>Gulab Jamun (2 pcs) - ₹60
+        <button class="add-to-cart" onclick="addToCart('Gulab Jamun', 60)">Add to Cart</button>
+      </li>
+      <li>Chocolate Brownie with Ice Cream - ₹150
+        <button class="add-to-cart" onclick="addToCart('Chocolate Brownie with Ice Cream', 150)">Add to Cart</button>
+      </li>
+      <li>Rasmalai (2 pcs) - ₹80
+        <button class="add-to-cart" onclick="addToCart('Rasmalai', 80)">Add to Cart</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Cart Section -->
+  <div class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <script src="Restaurent.js"></script>
+
+</body>
+
+</html>

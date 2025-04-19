@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indian Summer Menu</title>
+  <link rel="stylesheet" type="text/css" href="Restaurent.css" />
+
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="Image/QuickBites1.png" alt="Quickbites Logo" />
+    </div>
+    
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#aboutus">About Us</a></li>
+      <li class="item"><a href="#signup">Signup</a></li>
+      <li class="item"><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="restaurant-header">
+    <h2>Indian Summer</h2>
+    <p class="restaurant-address">Kumhrar, Patna, Bihar</p>
+    <p class="restaurant-contact">Contact: +91 8765432109</p>
+    <p class="restaurant-description">
+      Indian Summer offers an exotic fusion of Indian cuisine with a
+      contemporary twist. Located in Patna, it's a perfect spot for dining
+      with friends and family.
+    </p>
+  </div>
+
+  <div class="restaurant">
+    <ul>
+      <li><strong>Starters</strong></li>
+      <li>Hara Bhara Kebab - ₹180
+        <button class="add-to-cart" onclick="addToCart('Hara Bhara Kebab', 180)">Add to Cart</button>
+      </li>
+      <li>Chicken Malai Tikka - ₹250
+        <button class="add-to-cart" onclick="addToCart('Chicken Malai Tikka', 250)">Add to Cart</button>
+      </li>
+      <li>Papdi Chaat - ₹120
+        <button class="add-to-cart" onclick="addToCart('Papdi Chaat', 120)">Add to Cart</button>
+      </li>
+      <li>Fish Amritsari - ₹300
+        <button class="add-to-cart" onclick="addToCart('Fish Amritsari', 300)">Add to Cart</button>
+      </li>
+      <li>Vegetable Pakora - ₹130
+        <button class="add-to-cart" onclick="addToCart('Vegetable Pakora', 130)">Add to Cart</button>
+      </li>
+
+      <li><strong>Main Course</strong></li>
+      <li>Butter Chicken - ₹320
+        <button class="add-to-cart" onclick="addToCart('Butter Chicken', 320)">Add to Cart</button>
+      </li>
+      <li>Paneer Tikka Masala - ₹240
+        <button class="add-to-cart" onclick="addToCart('Paneer Tikka Masala', 240)">Add to Cart</button>
+      </li>
+      <li>Lamb Rogan Josh - ₹380
+        <button class="add-to-cart" onclick="addToCart('Lamb Rogan Josh', 380)">Add to Cart</button>
+      </li>
+      <li>Dal Tadka - ₹150
+        <button class="add-to-cart" onclick="addToCart('Dal Tadka', 150)">Add to Cart</button>
+      </li>
+      <li>Vegetable Biryani - ₹220
+        <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 220)">Add to Cart</button>
+      </li>
+      <li>Chicken Hyderabadi Biryani - ₹290
+        <button class="add-to-cart" onclick="addToCart('Chicken Hyderabadi Biryani', 290)">Add to Cart</button>
+      </li>
+
+      <li><strong>Breads</strong></li>
+      <li>Butter Naan - ₹45
+        <button class="add-to-cart" onclick="addToCart('Butter Naan', 45)">Add to Cart</button>
+      </li>
+      <li>Garlic Naan - ₹55
+        <button class="add-to-cart" onclick="addToCart('Garlic Naan', 55)">Add to Cart</button>
+      </li>
+      <li>Lachha Paratha - ₹40
+        <button class="add-to-cart" onclick="addToCart('Lachha Paratha', 40)">Add to Cart</button>
+      </li>
+      <li>Roomali Roti - ₹35
+        <button class="add-to-cart" onclick="addToCart('Roomali Roti', 35)">Add to Cart</button>
+      </li>
+
+      <li><strong>Desserts</strong></li>
+      <li>Gulab Jamun - ₹90
+        <button class="add-to-cart" onclick="addToCart('Gulab Jamun', 90)">Add to Cart</button>
+      </li>
+      <li>Ras Malai - ₹120
+        <button class="add-to-cart" onclick="addToCart('Ras Malai', 120)">Add to Cart</button>
+      </li>
+      <li>Chocolate Mousse - ₹150
+        <button class="add-to-cart" onclick="addToCart('Chocolate Mousse', 150)">Add to Cart</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <script src="Restaurent.js"></script>
+</body>
+
+</html>

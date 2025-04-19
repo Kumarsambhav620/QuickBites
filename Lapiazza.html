@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Piazza Menu</title>
+  <link rel="stylesheet" type="text/css" href="Restaurent.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="Image/QuickBites1.png" alt="Quickbites Logo" />
+    </div>
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#aboutus">About Us</a></li>
+      <li class="item"><a href="#signup">Signup</a></li>
+      <li class="item"><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="restaurant-header">
+    <h2>La Piazza</h2>
+    <p class="restaurant-address">Boring Road, Patna, Bihar</p>
+    <p class="restaurant-contact">Contact: +91 9123456789</p>
+    <p class="restaurant-description">
+      La Piazza brings a slice of Italy to Patna, offering a delicious range of authentic Italian dishes, from wood-fired pizzas to fresh pasta and mouth-watering desserts. Come enjoy the taste of Italy in the heart of the city.
+    </p>
+  </div>
+
+  <div class="restaurant">
+    <ul>
+      <li><strong>Pizza</strong></li>
+      <li>Margherita Pizza (Small) - ₹250
+        <button class="add-to-cart" onclick="addToCart('Margherita Pizza (Small)', 250)">Add to Cart</button>
+      </li>
+      <li>Margherita Pizza (Large) - ₹450
+        <button class="add-to-cart" onclick="addToCart('Margherita Pizza (Large)', 450)">Add to Cart</button>
+      </li>
+      <li>Veg Supreme Pizza (Small) - ₹300
+        <button class="add-to-cart" onclick="addToCart('Veg Supreme Pizza (Small)', 300)">Add to Cart</button>
+      </li>
+      <li>Veg Supreme Pizza (Large) - ₹550
+        <button class="add-to-cart" onclick="addToCart('Veg Supreme Pizza (Large)', 550)">Add to Cart</button>
+      </li>
+      <li>Chicken Tikka Pizza (Small) - ₹350
+        <button class="add-to-cart" onclick="addToCart('Chicken Tikka Pizza (Small)', 350)">Add to Cart</button>
+      </li>
+      <li>Chicken Tikka Pizza (Large) - ₹600
+        <button class="add-to-cart" onclick="addToCart('Chicken Tikka Pizza (Large)', 600)">Add to Cart</button>
+      </li>
+
+      <li><strong>Pasta</strong></li>
+      <li>Spaghetti Aglio e Olio - ₹280
+        <button class="add-to-cart" onclick="addToCart('Spaghetti Aglio e Olio', 280)">Add to Cart</button>
+      </li>
+      <li>Fettuccine Alfredo - ₹320
+        <button class="add-to-cart" onclick="addToCart('Fettuccine Alfredo', 320)">Add to Cart</button>
+      </li>
+      <li>Lasagna - ₹350
+        <button class="add-to-cart" onclick="addToCart('Lasagna', 350)">Add to Cart</button>
+      </li>
+      <li>Vegetable Penne Arrabbiata - ₹270
+        <button class="add-to-cart" onclick="addToCart('Vegetable Penne Arrabbiata', 270)">Add to Cart</button>
+      </li>
+
+      <li><strong>Starters</strong></li>
+      <li>Bruschetta - ₹180
+        <button class="add-to-cart" onclick="addToCart('Bruschetta', 180)">Add to Cart</button>
+      </li>
+      <li>Garlic Bread - ₹120
+        <button class="add-to-cart" onclick="addToCart('Garlic Bread', 120)">Add to Cart</button>
+      </li>
+      <li>Caprese Salad - ₹220
+        <button class="add-to-cart" onclick="addToCart('Caprese Salad', 220)">Add to Cart</button>
+      </li>
+
+      <li><strong>Side Dishes</strong></li>
+      <li>Potato Wedges - ₹150
+        <button class="add-to-cart" onclick="addToCart('Potato Wedges', 150)">Add to Cart</button>
+      </li>
+      <li>Sauteed Vegetables - ₹180
+        <button class="add-to-cart" onclick="addToCart('Sauteed Vegetables', 180)">Add to Cart</button>
+      </li>
+      <li>Mixed Olives - ₹130
+        <button class="add-to-cart" onclick="addToCart('Mixed Olives', 130)">Add to Cart</button>
+      </li>
+
+      <li><strong>Drinks</strong></li>
+      <li>Italian Soda - ₹100
+        <button class="add-to-cart" onclick="addToCart('Italian Soda', 100)">Add to Cart</button>
+      </li>
+      <li>Lemonade - ₹80
+        <button class="add-to-cart" onclick="addToCart('Lemonade', 80)">Add to Cart</button>
+      </li>
+      <li>Coffee (Espresso) - ₹150
+        <button class="add-to-cart" onclick="addToCart('Coffee (Espresso)', 150)">Add to Cart</button>
+      </li>
+
+      <li><strong>Desserts</strong></li>
+      <li>Tiramisu - ₹180
+        <button class="add-to-cart" onclick="addToCart('Tiramisu', 180)">Add to Cart</button>
+      </li>
+      <li>Chocolate Lava Cake - ₹200
+        <button class="add-to-cart" onclick="addToCart('Chocolate Lava Cake', 200)">Add to Cart</button>
+      </li>
+      <li>Gelato (2 Scoops) - ₹120
+        <button class="add-to-cart" onclick="addToCart('Gelato (2 Scoops)', 120)">Add to Cart</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <script src="Restaurent.js"></script>
+</body>
+
+</html>

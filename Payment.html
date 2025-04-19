@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payment Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+
+    .payment-container {
+      background: #fff;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .payment-option {
+      margin: 15px 0;
+    }
+
+    .payment-method-details {
+      margin-top: 20px;
+    }
+
+    .payment-method-details input,
+    .payment-method-details select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background: #28a745;
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: #218838;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #thank-you-message {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="payment-container">
+    
+    <!-- Grouped this section to hide together -->
+    <div id="payment-section">
+      <h2>Choose Payment Method</h2>
+
+      <form id="payment-form">
+        <!-- Payment Method Options -->
+        <div class="payment-option">
+          <label><input type="radio" name="payment-method" value="credit-card" checked> Credit/Debit Card</label>
+        </div>
+        <div class="payment-option">
+          <label><input type="radio" name="payment-method" value="net-banking"> Net Banking</label>
+        </div>
+        <div class="payment-option">
+          <label><input type="radio" name="payment-method" value="wallet"> Wallet (Paytm, GPay)</label>
+        </div>
+        <div class="payment-option">
+          <label><input type="radio" name="payment-method" value="upi"> UPI</label>
+        </div>
+
+        <!-- Payment Details -->
+        <div id="credit-card" class="payment-method-details">
+          <input type="text" placeholder="Card Number" required />
+          <input type="month" required />
+          <input type="text" placeholder="CVV" required />
+        </div>
+
+        <div id="net-banking" class="payment-method-details hidden">
+          <select required>
+            <option value="">Select Bank</option>
+            <option>HDFC</option>
+            <option>SBI</option>
+            <option>ICICI</option>
+            <option>Axis Bank</option>
+          </select>
+        </div>
+
+        <div id="wallet" class="payment-method-details hidden">
+          <select required>
+            <option value="">Select Wallet</option>
+            <option>Paytm</option>
+            <option>Google Pay</option>
+            <option>PhonePe</option>
+          </select>
+        </div>
+
+        <div id="upi" class="payment-method-details hidden">
+          <input type="text" placeholder="Enter UPI ID" required />
+        </div>
+
+        <button type="submit" class="submit-btn">Make Payment</button>
+      </form>
+    </div>
+
+    <!-- Thank You Message -->
+    <div id="thank-you-message" class="hidden">
+      <h2>Thank you!</h2>
+      <p>Your order has been confirmed after successful payment.</p>
+      <button class="submit-btn">Home</button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const radios = document.querySelectorAll('input[name="payment-method"]');
+      const methodSections = document.querySelectorAll('.payment-method-details');
+
+      function updatePaymentSection(selectedValue) {
+        methodSections.forEach(section => {
+          section.classList.add('hidden');
+          const inputs = section.querySelectorAll('input, select');
+          inputs.forEach(input => input.disabled = true);
+        });
+
+        const selectedSection = document.getElementById(selectedValue);
+        if (selectedSection) {
+          selectedSection.classList.remove('hidden');
+          const inputs = selectedSection.querySelectorAll('input, select');
+          inputs.forEach(input => input.disabled = false);
+        }
+      }
+
+      const defaultMethod = document.querySelector('input[name="payment-method"]:checked').value;
+      updatePaymentSection(defaultMethod);
+
+      radios.forEach(radio => {
+        radio.addEventListener('change', () => {
+          updatePaymentSection(radio.value);
+        });
+      });
+
+      document.getElementById('payment-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        document.getElementById('payment-section').classList.add('hidden');
+        document.getElementById('thank-you-message').classList.remove('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

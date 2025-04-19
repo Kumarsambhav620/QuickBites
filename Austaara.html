@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Austaara Menu</title>
+  <link rel="stylesheet" type="text/css" href="Restaurent.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="Image/QuickBites1.png" alt="Quickbites Logo" />
+    </div>
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#aboutus">About Us</a></li>
+      <li class="item"><a href="#signup">Signup</a></li>
+      <li class="item"><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="restaurant-header">
+    <h2>Austaara</h2>
+    <p class="restaurant-address">Boring Road, Patna, Bihar</p>
+    <p class="restaurant-contact">Contact: +91 9876543210</p>
+    <p class="restaurant-description">
+      Austaara brings fine dining with a modern twist. Enjoy expertly crafted
+      Indian, Asian, and Continental cuisine in an upscale ambiance.
+    </p>
+  </div>
+
+  <div class="restaurant">
+    <ul>
+      <li><strong>Starters</strong></li>
+      <li>Chili Paneer - ₹230
+        <button class="add-to-cart" onclick="addToCart('Chili Paneer', 230)">Add to Cart</button>
+      </li>
+      <li>Chicken Lollipop - ₹270
+        <button class="add-to-cart" onclick="addToCart('Chicken Lollipop', 270)">Add to Cart</button>
+      </li>
+      <li>Crispy Corn - ₹190
+        <button class="add-to-cart" onclick="addToCart('Crispy Corn', 190)">Add to Cart</button>
+      </li>
+      <li>Veg Spring Roll - ₹180
+        <button class="add-to-cart" onclick="addToCart('Veg Spring Roll', 180)">Add to Cart</button>
+      </li>
+      <li>Prawn Tempura - ₹320
+        <button class="add-to-cart" onclick="addToCart('Prawn Tempura', 320)">Add to Cart</button>
+      </li>
+
+      <li><strong>Main Course</strong></li>
+      <li>Thai Green Curry (Veg) - ₹260
+        <button class="add-to-cart" onclick="addToCart('Thai Green Curry (Veg)', 260)">Add to Cart</button>
+      </li>
+      <li>Grilled Chicken with Sauce - ₹360
+        <button class="add-to-cart" onclick="addToCart('Grilled Chicken with Sauce', 360)">Add to Cart</button>
+      </li>
+      <li>Paneer Lababdar - ₹250
+        <button class="add-to-cart" onclick="addToCart('Paneer Lababdar', 250)">Add to Cart</button>
+      </li>
+      <li>Fish Tikka Masala - ₹340
+        <button class="add-to-cart" onclick="addToCart('Fish Tikka Masala', 340)">Add to Cart</button>
+      </li>
+      <li>Veg Biryani - ₹220
+        <button class="add-to-cart" onclick="addToCart('Veg Biryani', 220)">Add to Cart</button>
+      </li>
+      <li>Chicken Dum Biryani - ₹280
+        <button class="add-to-cart" onclick="addToCart('Chicken Dum Biryani', 280)">Add to Cart</button>
+      </li>
+
+      <li><strong>Breads</strong></li>
+      <li>Stuffed Kulcha - ₹60
+        <button class="add-to-cart" onclick="addToCart('Stuffed Kulcha', 60)">Add to Cart</button>
+      </li>
+      <li>Butter Naan - ₹45
+        <button class="add-to-cart" onclick="addToCart('Butter Naan', 45)">Add to Cart</button>
+      </li>
+      <li>Roomali Roti - ₹35
+        <button class="add-to-cart" onclick="addToCart('Roomali Roti', 35)">Add to Cart</button>
+      </li>
+      <li>Missi Roti - ₹30
+        <button class="add-to-cart" onclick="addToCart('Missi Roti', 30)">Add to Cart</button>
+      </li>
+
+      <li><strong>Desserts</strong></li>
+      <li>Chocolate Brownie - ₹150
+        <button class="add-to-cart" onclick="addToCart('Chocolate Brownie', 150)">Add to Cart</button>
+      </li>
+      <li>Gulab Jamun - ₹80
+        <button class="add-to-cart" onclick="addToCart('Gulab Jamun', 80)">Add to Cart</button>
+      </li>
+      <li>Ice Cream Sundae - ₹130
+        <button class="add-to-cart" onclick="addToCart('Ice Cream Sundae', 130)">Add to Cart</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <script src="Restaurent.js"></script>
+</body>
+
+</html>

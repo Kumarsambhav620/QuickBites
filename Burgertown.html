@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger Town Menu</title>
+  <link rel="stylesheet" type="text/css" href="Restaurent.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="Image/QuickBites1.png" alt="Quickbites Logo" />
+    </div>
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#aboutus">About Us</a></li>
+      <li class="item"><a href="#signup">Signup</a></li>
+      <li class="item"><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="restaurant-header">
+    <h2>Burger Town</h2>
+    <p class="restaurant-address">Mithapur, Patna, Bihar</p>
+    <p class="restaurant-contact">Contact: +91 9123456789</p>
+    <p class="restaurant-description">
+      Burger Town offers a wide selection of gourmet burgers, fries, and shakes. Our burgers are made with fresh ingredients and served with a variety of sides and drinks to match your mood.
+    </p>
+  </div>
+
+  <div class="restaurant">
+    <ul>
+      <li><strong>Burgers</strong></li>
+      <li>Classic Cheeseburger - ₹220
+        <button class="add-to-cart" onclick="addToCart('Classic Cheeseburger', 220)">Add to Cart</button>
+      </li>
+      <li>Bacon Burger - ₹250
+        <button class="add-to-cart" onclick="addToCart('Bacon Burger', 250)">Add to Cart</button>
+      </li>
+      <li>Veg Burger - ₹180
+        <button class="add-to-cart" onclick="addToCart('Veg Burger', 180)">Add to Cart</button>
+      </li>
+      <li>Chicken Burger - ₹220
+        <button class="add-to-cart" onclick="addToCart('Chicken Burger', 220)">Add to Cart</button>
+      </li>
+      <li>BBQ Chicken Burger - ₹270
+        <button class="add-to-cart" onclick="addToCart('BBQ Chicken Burger', 270)">Add to Cart</button>
+      </li>
+
+      <li><strong>Fries</strong></li>
+      <li>French Fries (Regular) - ₹120
+        <button class="add-to-cart" onclick="addToCart('French Fries (Regular)', 120)">Add to Cart</button>
+      </li>
+      <li>Cheese Fries - ₹160
+        <button class="add-to-cart" onclick="addToCart('Cheese Fries', 160)">Add to Cart</button>
+      </li>
+      <li>Spicy Fries - ₹140
+        <button class="add-to-cart" onclick="addToCart('Spicy Fries', 140)">Add to Cart</button>
+      </li>
+
+      <li><strong>Shakes</strong></li>
+      <li>Vanilla Shake - ₹180
+        <button class="add-to-cart" onclick="addToCart('Vanilla Shake', 180)">Add to Cart</button>
+      </li>
+      <li>Chocolate Shake - ₹200
+        <button class="add-to-cart" onclick="addToCart('Chocolate Shake', 200)">Add to Cart</button>
+      </li>
+      <li>Strawberry Shake - ₹190
+        <button class="add-to-cart" onclick="addToCart('Strawberry Shake', 190)">Add to Cart</button>
+      </li>
+
+      <li><strong>Extras</strong></li>
+      <li>Onion Rings - ₹100
+        <button class="add-to-cart" onclick="addToCart('Onion Rings', 100)">Add to Cart</button>
+      </li>
+      <li>Coleslaw - ₹80
+        <button class="add-to-cart" onclick="addToCart('Coleslaw', 80)">Add to Cart</button>
+      </li>
+      <li>Garlic Bread - ₹120
+        <button class="add-to-cart" onclick="addToCart('Garlic Bread', 120)">Add to Cart</button>
+      </li>
+
+      <li><strong>Drinks</strong></li>
+      <li>Coca Cola - ₹40
+        <button class="add-to-cart" onclick="addToCart('Coca Cola', 40)">Add to Cart</button>
+      </li>
+      <li>Sprite - ₹40
+        <button class="add-to-cart" onclick="addToCart('Sprite', 40)">Add to Cart</button>
+      </li>
+      <li>Peach Iced Tea - ₹60
+        <button class="add-to-cart" onclick="addToCart('Peach Iced Tea', 60)">Add to Cart</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <script src="Restaurent.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe 90 Menu</title>
+  <link rel="stylesheet" type="text/css" href="Restaurent.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="Image/QuickBites1.png" alt="Quickbites Logo">
+    </div>
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#aboutus">About Us</a></li>
+      <li class="item"><a href="#signup">Signup</a></li>
+      <li class="item"><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="restaurant-header">
+    <h2>Cafe 90</h2>
+    <p class="restaurant-address">Boring Road, Patna, Bihar</p>
+    <p class="restaurant-contact">Contact: +91 9123456789</p>
+    <p class="restaurant-description">Cafe 90 offers a cozy ambiance with a delightful variety of snacks, sandwiches, coffee, and smoothies, perfect for an afternoon hangout or a quick bite.</p>
+  </div>
+
+  <div class="restaurant">
+    <ul>
+      <li><strong>Snacks</strong></li>
+      <li>French Fries - ₹100
+        <button class="add-to-cart" onclick="addToCart('French Fries', 100)">Add to Cart</button>
+      </li>
+      <li>Cheese Toast - ₹150
+        <button class="add-to-cart" onclick="addToCart('Cheese Toast', 150)">Add to Cart</button>
+      </li>
+      <li>Spring Rolls - ₹180
+        <button class="add-to-cart" onclick="addToCart('Spring Rolls', 180)">Add to Cart</button>
+      </li>
+      <li>Onion Rings - ₹130
+        <button class="add-to-cart" onclick="addToCart('Onion Rings', 130)">Add to Cart</button>
+      </li>
+      <li>Veg Pakora - ₹120
+        <button class="add-to-cart" onclick="addToCart('Veg Pakora', 120)">Add to Cart</button>
+      </li>
+
+      <li><strong>Sandwiches</strong></li>
+      <li>Grilled Cheese Sandwich - ₹200
+        <button class="add-to-cart" onclick="addToCart('Grilled Cheese Sandwich', 200)">Add to Cart</button>
+      </li>
+      <li>Veg Club Sandwich - ₹220
+        <button class="add-to-cart" onclick="addToCart('Veg Club Sandwich', 220)">Add to Cart</button>
+      </li>
+      <li>Chicken Sandwich - ₹250
+        <button class="add-to-cart" onclick="addToCart('Chicken Sandwich', 250)">Add to Cart</button>
+      </li>
+      <li>Paneer Tikka Sandwich - ₹240
+        <button class="add-to-cart" onclick="addToCart('Paneer Tikka Sandwich', 240)">Add to Cart</button>
+      </li>
+
+      <li><strong>Coffee</strong></li>
+      <li>Espresso - ₹100
+        <button class="add-to-cart" onclick="addToCart('Espresso', 100)">Add to Cart</button>
+      </li>
+      <li>Americano - ₹120
+        <button class="add-to-cart" onclick="addToCart('Americano', 120)">Add to Cart</button>
+      </li>
+      <li>Cappuccino - ₹150
+        <button class="add-to-cart" onclick="addToCart('Cappuccino', 150)">Add to Cart</button>
+      </li>
+      <li>Latte - ₹160
+        <button class="add-to-cart" onclick="addToCart('Latte', 160)">Add to Cart</button>
+      </li>
+      <li>Mocha - ₹180
+        <button class="add-to-cart" onclick="addToCart('Mocha', 180)">Add to Cart</button>
+      </li>
+
+      <li><strong>Smoothies</strong></li>
+      <li>Banana Smoothie - ₹180
+        <button class="add-to-cart" onclick="addToCart('Banana Smoothie', 180)">Add to Cart</button>
+      </li>
+      <li>Mango Smoothie - ₹200
+        <button class="add-to-cart" onclick="addToCart('Mango Smoothie', 200)">Add to Cart</button>
+      </li>
+      <li>Berry Smoothie - ₹220
+        <button class="add-to-cart" onclick="addToCart('Berry Smoothie', 220)">Add to Cart</button>
+      </li>
+      <li>Green Smoothie - ₹210
+        <button class="add-to-cart" onclick="addToCart('Green Smoothie', 210)">Add to Cart</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Cart Section -->
+  <div class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <script src="Restaurent.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #2a3439;
+    /* Solid black background */
+    z-index: 1000;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+
+
+
+/* LOGO */
+#logo {
+    margin: 10px 5px;
+}
+
+#logo img {
+    height: 50px;
+}
+
+/* NAVIGATION MENU */
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li {
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: red;
+    display: block;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+.order-section {
+    padding: 30px;
+    background-color: #fdfdfd;
+    border-top: 2px solid #e0e0e0;
+    margin-top: 30px;
+}
+
+.order-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.order-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-form label {
+    font-weight: 600;
+    color: #444;
+}
+
+.order-form input,
+.order-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.order-form .btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-form .btn:hover {
+    background-color: #218838;
+}

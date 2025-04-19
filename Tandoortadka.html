@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tandoor Tadka Menu</title>
+  <link rel="stylesheet" type="text/css" href="Restaurent.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="Image/QuickBites1.png" alt="Quickbites Logo" />
+    </div>
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#aboutus">About Us</a></li>
+      <li class="item"><a href="#signup">Signup</a></li>
+      <li class="item"><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="restaurant-header">
+    <h2>Tandoor Tadka</h2>
+    <p class="restaurant-address">Ashok Rajpath, Patna, Bihar</p>
+    <p class="restaurant-contact">Contact: +91 9876543211</p>
+    <p class="restaurant-description">
+      Tandoor Tadka is renowned for its tandoori delights and aromatic Indian curries. A perfect destination for spice lovers!
+    </p>
+  </div>
+
+  <div class="restaurant">
+    <ul>
+      <li><strong>Starters</strong></li>
+      <li>Paneer Tikka - ₹230
+        <button class="add-to-cart" onclick="addToCart('Paneer Tikka', 230)">Add to Cart</button>
+      </li>
+      <li>Chicken Tikka - ₹270
+        <button class="add-to-cart" onclick="addToCart('Chicken Tikka', 270)">Add to Cart</button>
+      </li>
+      <li>Fish Tikka - ₹290
+        <button class="add-to-cart" onclick="addToCart('Fish Tikka', 290)">Add to Cart</button>
+      </li>
+      <li>Hara Bhara Kebab - ₹200
+        <button class="add-to-cart" onclick="addToCart('Hara Bhara Kebab', 200)">Add to Cart</button>
+      </li>
+
+      <li><strong>Main Course</strong></li>
+      <li>Butter Chicken - ₹320
+        <button class="add-to-cart" onclick="addToCart('Butter Chicken', 320)">Add to Cart</button>
+      </li>
+      <li>Dal Tadka - ₹180
+        <button class="add-to-cart" onclick="addToCart('Dal Tadka', 180)">Add to Cart</button>
+      </li>
+      <li>Chicken Curry - ₹280
+        <button class="add-to-cart" onclick="addToCart('Chicken Curry', 280)">Add to Cart</button>
+      </li>
+      <li>Shahi Paneer - ₹250
+        <button class="add-to-cart" onclick="addToCart('Shahi Paneer', 250)">Add to Cart</button>
+      </li>
+
+      <li><strong>Tandoori Specials</strong></li>
+      <li>Tandoori Roti - ₹20
+        <button class="add-to-cart" onclick="addToCart('Tandoori Roti', 20)">Add to Cart</button>
+      </li>
+      <li>Garlic Naan - ₹55
+        <button class="add-to-cart" onclick="addToCart('Garlic Naan', 55)">Add to Cart</button>
+      </li>
+      <li>Veg Seekh Kebab - ₹220
+        <button class="add-to-cart" onclick="addToCart('Veg Seekh Kebab', 220)">Add to Cart</button>
+      </li>
+
+      <li><strong>Biryani</strong></li>
+      <li>Chicken Biryani - ₹380
+        <button class="add-to-cart" onclick="addToCart('Chicken Biryani', 380)">Add to Cart</button>
+      </li>
+      <li>Veg Biryani - ₹290
+        <button class="add-to-cart" onclick="addToCart('Veg Biryani', 290)">Add to Cart</button>
+      </li>
+      <li>Mutton Biryani - ₹420
+        <button class="add-to-cart" onclick="addToCart('Mutton Biryani', 420)">Add to Cart</button>
+      </li>
+
+      <li><strong>Drinks</strong></li>
+      <li>Sweet Lassi - ₹60
+        <button class="add-to-cart" onclick="addToCart('Sweet Lassi', 60)">Add to Cart</button>
+      </li>
+      <li>Salted Lassi - ₹50
+        <button class="add-to-cart" onclick="addToCart('Salted Lassi', 50)">Add to Cart</button>
+      </li>
+      <li>Soft Drink - ₹40
+        <button class="add-to-cart" onclick="addToCart('Soft Drink', 40)">Add to Cart</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <script src="Restaurent.js"></script>
+</body>
+
+</html>

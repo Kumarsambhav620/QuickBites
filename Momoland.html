@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momo Land Menu</title>
+  <link rel="stylesheet" type="text/css" href="Restaurent.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="Image/QuickBites1.png" alt="Quickbites Logo">
+    </div>
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#aboutus">About Us</a></li>
+      <li class="item"><a href="#signup">Signup</a></li>
+      <li class="item"><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="restaurant-header">
+    <h2>Momo Land</h2>
+    <p class="restaurant-address">Dak Bungalow Road, Patna, Bihar</p>
+    <p class="restaurant-contact">Contact: +91 9876543210</p>
+    <p class="restaurant-description">Momo Land specializes in delicious momos, offering a variety of options from steamed to fried, served with a choice of sauces and fillings.</p>
+  </div>
+
+  <div class="restaurant">
+    <ul>
+      <li><strong>Steamed Momos</strong></li>
+      <li>Veg Steamed Momo - ₹150
+        <button class="add-to-cart" onclick="addToCart('Veg Steamed Momo', 150)">Add to Cart</button>
+      </li>
+      <li>Chicken Steamed Momo - ₹180
+        <button class="add-to-cart" onclick="addToCart('Chicken Steamed Momo', 180)">Add to Cart</button>
+      </li>
+      <li>Paneer Steamed Momo - ₹170
+        <button class="add-to-cart" onclick="addToCart('Paneer Steamed Momo', 170)">Add to Cart</button>
+      </li>
+      <li>Mixed Steamed Momo - ₹200
+        <button class="add-to-cart" onclick="addToCart('Mixed Steamed Momo', 200)">Add to Cart</button>
+      </li>
+
+      <li><strong>Fried Momos</strong></li>
+      <li>Veg Fried Momo - ₹180
+        <button class="add-to-cart" onclick="addToCart('Veg Fried Momo', 180)">Add to Cart</button>
+      </li>
+      <li>Chicken Fried Momo - ₹210
+        <button class="add-to-cart" onclick="addToCart('Chicken Fried Momo', 210)">Add to Cart</button>
+      </li>
+      <li>Paneer Fried Momo - ₹190
+        <button class="add-to-cart" onclick="addToCart('Paneer Fried Momo', 190)">Add to Cart</button>
+      </li>
+      <li>Mixed Fried Momo - ₹220
+        <button class="add-to-cart" onclick="addToCart('Mixed Fried Momo', 220)">Add to Cart</button>
+      </li>
+
+      <li><strong>Special Momos</strong></li>
+      <li>Cheese Momo - ₹230
+        <button class="add-to-cart" onclick="addToCart('Cheese Momo', 230)">Add to Cart</button>
+      </li>
+      <li>Chocolate Momo - ₹250
+        <button class="add-to-cart" onclick="addToCart('Chocolate Momo', 250)">Add to Cart</button>
+      </li>
+      <li>Chili Momo - ₹240
+        <button class="add-to-cart" onclick="addToCart('Chili Momo', 240)">Add to Cart</button>
+      </li>
+      <li>Spicy Momo - ₹260
+        <button class="add-to-cart" onclick="addToCart('Spicy Momo', 260)">Add to Cart</button>
+      </li>
+
+      <li><strong>Dips</strong></li>
+      <li>Garlic Dip - ₹30
+        <button class="add-to-cart" onclick="addToCart('Garlic Dip', 30)">Add to Cart</button>
+      </li>
+      <li>Schezwan Dip - ₹40
+        <button class="add-to-cart" onclick="addToCart('Schezwan Dip', 40)">Add to Cart</button>
+      </li>
+      <li>Mint Dip - ₹35
+        <button class="add-to-cart" onclick="addToCart('Mint Dip', 35)">Add to Cart</button>
+      </li>
+      <li>Chili Dip - ₹45
+        <button class="add-to-cart" onclick="addToCart('Chili Dip', 45)">Add to Cart</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Cart Section -->
+  <div class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <script src="Restaurent.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="Address.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Image/QuickBites1.png" alt="Quickbites Logo">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#aboutus">About Us</a></li>
+            <li class="item"><a href="Signup.html">Signup</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section class="order-section">
+        <h2 class="order-heading">Complete Your Order</h2>
+        <form action="payment.html" method="POST" class="order-form">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="Your name">
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="e.g. 9876543210" pattern="[0-9]{10}">
+    
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+    
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="4" required placeholder="House No, Street, Locality, etc."></textarea>
+    
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" required pattern="[0-9]{6}" placeholder="e.g. 800001">
+    
+            <label for="landmark">Landmark (Optional):</label>
+            <input type="text" id="landmark" name="landmark" placeholder="Near park, mall, etc.">
+    
+            <label for="delivery-time">Preferred Delivery Time:</label>
+            <input type="time" id="delivery-time" name="deliveryTime">
+    
+            <label for="notes">Special Instructions:</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="E.g. Don't ring the bell, leave at doorstep"></textarea>
+    
+            <button type="submit" class="btn">Proceed to Payment</button>
+        </form>
+    </section>
+    
+</body>
+</html>

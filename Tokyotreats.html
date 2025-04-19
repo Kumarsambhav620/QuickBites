@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokyo Treats Menu</title>
+  <link rel="stylesheet" type="text/css" href="Restaurent.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="Image/QuickBites1.png" alt="Quickbites Logo">
+    </div>
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#aboutus">About Us</a></li>
+      <li class="item"><a href="#signup">Signup</a></li>
+      <li class="item"><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="restaurant-header">
+    <h2>Tokyo Treats</h2>
+    <p class="restaurant-address">Ranjan Plaza, Patna, Bihar</p>
+    <p class="restaurant-contact">Contact: +91 9123456789</p>
+    <p class="restaurant-description">Tokyo Treats brings the authentic flavors of Japanese cuisine to Patna. Enjoy sushi, ramen, and other traditional delights with an authentic Japanese experience.</p>
+  </div>
+
+  <div class="restaurant">
+    <ul>
+      <li><strong>Starters</strong></li>
+      <li>Edamame - ₹120
+        <button class="add-to-cart" onclick="addToCart('Edamame', 120)">Add to Cart</button>
+      </li>
+      <li>Tempura (Vegetable) - ₹180
+        <button class="add-to-cart" onclick="addToCart('Tempura (Vegetable)', 180)">Add to Cart</button>
+      </li>
+      <li>Gyoza (Pork) - ₹220
+        <button class="add-to-cart" onclick="addToCart('Gyoza (Pork)', 220)">Add to Cart</button>
+      </li>
+      <li>Shumai (Chicken) - ₹200
+        <button class="add-to-cart" onclick="addToCart('Shumai (Chicken)', 200)">Add to Cart</button>
+      </li>
+      <li>Seaweed Salad - ₹150
+        <button class="add-to-cart" onclick="addToCart('Seaweed Salad', 150)">Add to Cart</button>
+      </li>
+
+      <li><strong>Main Course</strong></li>
+      <li>Sushi Platter - ₹450
+        <button class="add-to-cart" onclick="addToCart('Sushi Platter', 450)">Add to Cart</button>
+      </li>
+      <li>Ramen (Chicken) - ₹350
+        <button class="add-to-cart" onclick="addToCart('Ramen (Chicken)', 350)">Add to Cart</button>
+      </li>
+      <li>Ramen (Vegetable) - ₹300
+        <button class="add-to-cart" onclick="addToCart('Ramen (Vegetable)', 300)">Add to Cart</button>
+      </li>
+      <li>Teriyaki Chicken - ₹400
+        <button class="add-to-cart" onclick="addToCart('Teriyaki Chicken', 400)">Add to Cart</button>
+      </li>
+      <li>Donburi (Beef) - ₹350
+        <button class="add-to-cart" onclick="addToCart('Donburi (Beef)', 350)">Add to Cart</button>
+      </li>
+
+      <li><strong>Rice & Noodles</strong></li>
+      <li>Fried Rice (Vegetable) - ₹200
+        <button class="add-to-cart" onclick="addToCart('Fried Rice (Vegetable)', 200)">Add to Cart</button>
+      </li>
+      <li>Soba Noodles - ₹250
+        <button class="add-to-cart" onclick="addToCart('Soba Noodles', 250)">Add to Cart</button>
+      </li>
+      <li>Yakimeshi - ₹300
+        <button class="add-to-cart" onclick="addToCart('Yakimeshi', 300)">Add to Cart</button>
+      </li>
+
+      <li><strong>Drinks</strong></li>
+      <li>Matcha Latte - ₹180
+        <button class="add-to-cart" onclick="addToCart('Matcha Latte', 180)">Add to Cart</button>
+      </li>
+      <li>Green Tea - ₹80
+        <button class="add-to-cart" onclick="addToCart('Green Tea', 80)">Add to Cart</button>
+      </li>
+      <li>Sake - ₹250
+        <button class="add-to-cart" onclick="addToCart('Sake', 250)">Add to Cart</button>
+      </li>
+      <li>Ramune (Japanese Soda) - ₹120
+        <button class="add-to-cart" onclick="addToCart('Ramune (Japanese Soda)', 120)">Add to Cart</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Cart Section -->
+  <div class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <script src="Restaurent.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biryani House Menu</title>
+  <link rel="stylesheet" type="text/css" href="Restaurent.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="Image/QuickBites1.png" alt="Quickbites Logo" />
+    </div>
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#aboutus">About Us</a></li>
+      <li class="item"><a href="#signup">Signup</a></li>
+      <li class="item"><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="restaurant-header">
+    <h2>Biryani House</h2>
+    <p class="restaurant-address">Kumar Road, Patna, Bihar</p>
+    <p class="restaurant-contact">Contact: +91 8765432109</p>
+    <p class="restaurant-description">
+      Biryani House offers a variety of authentic, mouth-watering biryanis that cater to every palate. From traditional chicken biryani to more unique varieties, we pride ourselves on delivering rich flavors with every dish.
+    </p>
+  </div>
+
+  <div class="restaurant">
+    <ul>
+      <li><strong>Biryani</strong></li>
+      <li>Chicken Biryani (Half) - ₹220
+        <button class="add-to-cart" onclick="addToCart('Chicken Biryani (Half)', 220)">Add to Cart</button>
+      </li>
+      <li>Chicken Biryani (Full) - ₹380
+        <button class="add-to-cart" onclick="addToCart('Chicken Biryani (Full)', 380)">Add to Cart</button>
+      </li>
+      <li>Mutton Biryani (Half) - ₹250
+        <button class="add-to-cart" onclick="addToCart('Mutton Biryani (Half)', 250)">Add to Cart</button>
+      </li>
+      <li>Mutton Biryani (Full) - ₹420
+        <button class="add-to-cart" onclick="addToCart('Mutton Biryani (Full)', 420)">Add to Cart</button>
+      </li>
+      <li>Veg Biryani (Half) - ₹180
+        <button class="add-to-cart" onclick="addToCart('Veg Biryani (Half)', 180)">Add to Cart</button>
+      </li>
+      <li>Veg Biryani (Full) - ₹320
+        <button class="add-to-cart" onclick="addToCart('Veg Biryani (Full)', 320)">Add to Cart</button>
+      </li>
+      <li>Special Hyderabadi Biryani - ₹350
+        <button class="add-to-cart" onclick="addToCart('Special Hyderabadi Biryani', 350)">Add to Cart</button>
+      </li>
+
+      <li><strong>Starters</strong></li>
+      <li>Chicken Seekh Kebab - ₹180
+        <button class="add-to-cart" onclick="addToCart('Chicken Seekh Kebab', 180)">Add to Cart</button>
+      </li>
+      <li>Paneer Tikka - ₹150
+        <button class="add-to-cart" onclick="addToCart('Paneer Tikka', 150)">Add to Cart</button>
+      </li>
+      <li>Fish Amritsari - ₹220
+        <button class="add-to-cart" onclick="addToCart('Fish Amritsari', 220)">Add to Cart</button>
+      </li>
+      <li>Hara Bhara Kebab - ₹160
+        <button class="add-to-cart" onclick="addToCart('Hara Bhara Kebab', 160)">Add to Cart</button>
+      </li>
+
+      <li><strong>Accompaniments</strong></li>
+      <li>Raita (Boondi) - ₹50
+        <button class="add-to-cart" onclick="addToCart('Raita (Boondi)', 50)">Add to Cart</button>
+      </li>
+      <li>Salad - ₹40
+        <button class="add-to-cart" onclick="addToCart('Salad', 40)">Add to Cart</button>
+      </li>
+      <li>Green Chutney - ₹30
+        <button class="add-to-cart" onclick="addToCart('Green Chutney', 30)">Add to Cart</button>
+      </li>
+
+      <li><strong>Drinks</strong></li>
+      <li>Lassi (Sweet/Salt) - ₹90
+        <button class="add-to-cart" onclick="addToCart('Lassi (Sweet/Salt)', 90)">Add to Cart</button>
+      </li>
+      <li>Soft Drink (Coke/Pepsi) - ₹40
+        <button class="add-to-cart" onclick="addToCart('Soft Drink (Coke/Pepsi)', 40)">Add to Cart</button>
+      </li>
+      <li>Mint Lemonade - ₹70
+        <button class="add-to-cart" onclick="addToCart('Mint Lemonade', 70)">Add to Cart</button>
+      </li>
+
+      <li><strong>Desserts</strong></li>
+      <li>Gulab Jamun (2 Pieces) - ₹50
+        <button class="add-to-cart" onclick="addToCart('Gulab Jamun (2 Pieces)', 50)">Add to Cart</button>
+      </li>
+      <li>Shahi Tukda - ₹70
+        <button class="add-to-cart" onclick="addToCart('Shahi Tukda', 70)">Add to Cart</button>
+      </li>
+      <li>Ice Cream - ₹80
+        <button class="add-to-cart" onclick="addToCart('Ice Cream', 80)">Add to Cart</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <script src="Restaurent.js"></script>
+</body>
+
+</html>

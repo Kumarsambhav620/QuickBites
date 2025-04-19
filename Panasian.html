@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pan Asian Menu</title>
+  <link rel="stylesheet" type="text/css" href="Restaurent.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="Image/QuickBites1.png" alt="Quickbites Logo" />
+    </div>
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#aboutus">About Us</a></li>
+      <li class="item"><a href="#signup">Signup</a></li>
+      <li class="item"><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="restaurant-header">
+    <h2>Pan Asian</h2>
+    <p class="restaurant-address">Boring Road, Patna, Bihar</p>
+    <p class="restaurant-contact">Contact: +91 9807654321</p>
+    <p class="restaurant-description">
+      Pan Asian is your ultimate destination for a unique blend of Asian flavors, offering an exquisite dining experience with a menu that spans the diverse cuisines of East Asia.
+    </p>
+  </div>
+
+  <div class="restaurant">
+    <ul>
+      <li><strong>Starters</strong></li>
+      <li>Vegetable Spring Rolls - ₹150
+        <button class="add-to-cart" onclick="addToCart('Vegetable Spring Rolls', 150)">Add to Cart</button>
+      </li>
+      <li>Chicken Dumplings - ₹180
+        <button class="add-to-cart" onclick="addToCart('Chicken Dumplings', 180)">Add to Cart</button>
+      </li>
+      <li>Fish Cakes - ₹220
+        <button class="add-to-cart" onclick="addToCart('Fish Cakes', 220)">Add to Cart</button>
+      </li>
+      <li>Paneer Satay - ₹170
+        <button class="add-to-cart" onclick="addToCart('Paneer Satay', 170)">Add to Cart</button>
+      </li>
+      <li>Vegetable Sui Mai - ₹160
+        <button class="add-to-cart" onclick="addToCart('Vegetable Sui Mai', 160)">Add to Cart</button>
+      </li>
+
+      <li><strong>Main Course</strong></li>
+      <li>Kung Pao Chicken - ₹270
+        <button class="add-to-cart" onclick="addToCart('Kung Pao Chicken', 270)">Add to Cart</button>
+      </li>
+      <li>Thai Green Curry with Rice - ₹300
+        <button class="add-to-cart" onclick="addToCart('Thai Green Curry with Rice', 300)">Add to Cart</button>
+      </li>
+      <li>Sweet & Sour Pork - ₹330
+        <button class="add-to-cart" onclick="addToCart('Sweet & Sour Pork', 330)">Add to Cart</button>
+      </li>
+      <li>Hakka Noodles - ₹220
+        <button class="add-to-cart" onclick="addToCart('Hakka Noodles', 220)">Add to Cart</button>
+      </li>
+      <li>Dim Sum (Assorted) - ₹250
+        <button class="add-to-cart" onclick="addToCart('Dim Sum (Assorted)', 250)">Add to Cart</button>
+      </li>
+
+      <li><strong>Breads</strong></li>
+      <li>Steamed Jasmine Rice - ₹60
+        <button class="add-to-cart" onclick="addToCart('Steamed Jasmine Rice', 60)">Add to Cart</button>
+      </li>
+      <li>Garlic Naan - ₹55
+        <button class="add-to-cart" onclick="addToCart('Garlic Naan', 55)">Add to Cart</button>
+      </li>
+      <li>Chinese Paratha - ₹45
+        <button class="add-to-cart" onclick="addToCart('Chinese Paratha', 45)">Add to Cart</button>
+      </li>
+
+      <li><strong>Drinks</strong></li>
+      <li>Lemon Grass Tea - ₹90
+        <button class="add-to-cart" onclick="addToCart('Lemon Grass Tea', 90)">Add to Cart</button>
+      </li>
+      <li>Jasmine Iced Tea - ₹100
+        <button class="add-to-cart" onclick="addToCart('Jasmine Iced Tea', 100)">Add to Cart</button>
+      </li>
+      <li>Lychee Mojito - ₹150
+        <button class="add-to-cart" onclick="addToCart('Lychee Mojito', 150)">Add to Cart</button>
+      </li>
+
+      <li><strong>Desserts</strong></li>
+      <li>Sticky Rice with Mango - ₹180
+        <button class="add-to-cart" onclick="addToCart('Sticky Rice with Mango', 180)">Add to Cart</button>
+      </li>
+      <li>Fried Ice Cream - ₹150
+        <button class="add-to-cart" onclick="addToCart('Fried Ice Cream', 150)">Add to Cart</button>
+      </li>
+      <li>Red Bean Pancake - ₹140
+        <button class="add-to-cart" onclick="addToCart('Red Bean Pancake', 140)">Add to Cart</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <script src="Restaurent.js"></script>
+</body>
+
+</html>

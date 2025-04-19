@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wrap It Up Menu</title>
+  <link rel="stylesheet" type="text/css" href="Restaurent.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="Image/QuickBites1.png" alt="Quickbites Logo">
+    </div>
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#aboutus">About Us</a></li>
+      <li class="item"><a href="#signup">Signup</a></li>
+      <li class="item"><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="restaurant-header">
+    <h2>Wrap It Up</h2>
+    <p class="restaurant-address">Frazer Road, Patna, Bihar</p>
+    <p class="restaurant-contact">Contact: +91 9123456780</p>
+    <p class="restaurant-description">Wrap It Up specializes in delicious, fresh wraps filled with a variety of ingredients ranging from grilled meats to vegetarian options. A perfect meal on the go!</p>
+  </div>
+
+  <div class="restaurant">
+    <ul>
+      <li><strong>Wraps</strong></li>
+      <li>Chicken Shawarma Wrap - ₹180
+        <button class="add-to-cart" onclick="addToCart('Chicken Shawarma Wrap', 180)">Add to Cart</button>
+      </li>
+      <li>Beef Kebab Wrap - ₹220
+        <button class="add-to-cart" onclick="addToCart('Beef Kebab Wrap', 220)">Add to Cart</button>
+      </li>
+      <li>Paneer Tikka Wrap - ₹170
+        <button class="add-to-cart" onclick="addToCart('Paneer Tikka Wrap', 170)">Add to Cart</button>
+      </li>
+      <li>Chicken Tikka Wrap - ₹200
+        <button class="add-to-cart" onclick="addToCart('Chicken Tikka Wrap', 200)">Add to Cart</button>
+      </li>
+      <li>Falafel Wrap - ₹150
+        <button class="add-to-cart" onclick="addToCart('Falafel Wrap', 150)">Add to Cart</button>
+      </li>
+
+      <li><strong>Salads</strong></li>
+      <li>Greek Salad - ₹120
+        <button class="add-to-cart" onclick="addToCart('Greek Salad', 120)">Add to Cart</button>
+      </li>
+      <li>Caesar Salad - ₹150
+        <button class="add-to-cart" onclick="addToCart('Caesar Salad', 150)">Add to Cart</button>
+      </li>
+      <li>Fruit Salad - ₹100
+        <button class="add-to-cart" onclick="addToCart('Fruit Salad', 100)">Add to Cart</button>
+      </li>
+      
+      <li><strong>Fries</strong></li>
+      <li>Masala Fries - ₹70
+        <button class="add-to-cart" onclick="addToCart('Masala Fries', 70)">Add to Cart</button>
+      </li>
+      <li>Cheese Fries - ₹100
+        <button class="add-to-cart" onclick="addToCart('Cheese Fries', 100)">Add to Cart</button>
+      </li>
+      <li>Spicy Fries - ₹80
+        <button class="add-to-cart" onclick="addToCart('Spicy Fries', 80)">Add to Cart</button>
+      </li>
+
+      <li><strong>Drinks</strong></li>
+      <li>Mint Lemonade - ₹50
+        <button class="add-to-cart" onclick="addToCart('Mint Lemonade', 50)">Add to Cart</button>
+      </li>
+      <li>Coke - ₹40
+        <button class="add-to-cart" onclick="addToCart('Coke', 40)">Add to Cart</button>
+      </li>
+      <li>Orange Juice - ₹60
+        <button class="add-to-cart" onclick="addToCart('Orange Juice', 60)">Add to Cart</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Cart Section -->
+  <div class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <script src="Restaurent.js"></script>
+
+</body>
+
+</html>

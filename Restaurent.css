@@ -1,0 +1,280 @@
+/* Base layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* Container for the menu */
+.restaurant {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  max-width: 650px;
+  margin: auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading styles */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+p {
+  text-align: center;
+  color: #777;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* Menu item layout */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: box-shadow 0.2s;
+}
+
+ul li:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Category headers */
+ul li strong {
+  flex: 1;
+  font-size: 20px;
+  background: #eee;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* Quantity control layout */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Plus/Minus Buttons */
+.quantity-controls button {
+  background-color: #ff6b00;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.quantity-controls button:hover {
+  background-color: #d95d00;
+}
+
+/* Quantity Number */
+.quantity-controls span {
+  min-width: 22px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  font-size: 15px;
+}
+
+/* Cart Section */
+.cart {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.cart h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.cart li {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Cart Buttons */
+.cart button {
+  margin-top: 6px;
+  margin-right: 5px;
+  padding: 4px 8px;
+  font-size: 13px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart button:hover {
+  background-color: #218838;
+}
+
+/* Place Order Button */
+.place-order-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.place-order-btn:hover {
+  background-color: #218838;
+}
+
+/* Add to Cart Button */
+button.add-to-cart {
+  background-color: #28a745;
+  color: white;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button.add-to-cart:hover {
+  background-color: #218838;
+}
+
+
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* CSS VARIABLES */
+:root {
+  --navbar-height: 59px;
+}
+
+/* NAVIGATION BAR */
+/*#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  z-index: 100;
+}*/
+
+/* NAVIGATION BACKGROUND OVERLAY */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: #2a3439;
+  /* Solid black background */
+  z-index: 1000;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+
+
+
+/* LOGO */
+#logo {
+  margin: 10px 5px;
+}
+
+#logo img {
+  height: 50px;
+}
+
+/* NAVIGATION MENU */
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar ul li {
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: red;
+  display: block;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
